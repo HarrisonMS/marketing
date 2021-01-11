@@ -17,8 +17,12 @@ const ServicesContainer = styled(Element)`
   padding: 10px 0;
   background-color: #121212;
 `
+var imgstyle = {
+  height: '100px',
+}
 
 export function ServicesSection(props) {
+  console.log(props)
   return (
     <ServicesContainer name='servicesSection'>
       <SectionTitle>Best Quality Software</SectionTitle>
@@ -29,6 +33,7 @@ export function ServicesSection(props) {
         imgUrl={Service1Img}
       ></OurService>
       <OurService
+        style={imgstyle}
         isReversed
         title='Mobile optimized'
         description='From Desktop to Mobile our team of designers and developers will provide you a smooth transition'

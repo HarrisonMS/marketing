@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { theme } from '../../theme'
 
 const ServicesContainer = styled.div`
   display: flex;
@@ -9,7 +10,7 @@ const ServicesContainer = styled.div`
 `
 const ServiceImg = styled.img`
   width: 40rem;
-  height: 28rem;
+  height: 32rem;
 `
 
 const DescriptionContainer = styled.div`
@@ -20,14 +21,14 @@ const DescriptionContainer = styled.div`
 `
 
 const TitleContainer = styled.h2`
-  color: #ffffff;
+  color: ${theme.text_primary};
   font-size: 22px;
   font-weight: 700;
   margin: 5px 0;
 `
 
 const Details = styled.p`
-  color: #b0bec5;
+  color: ${theme.text_secondary};
   font-size: 19px;
   text-align: center;
   max-width: 55%;

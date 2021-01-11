@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo1 from '../../assets/logo/spokane.png'
+import Logo1 from '../../assets/logo/logo.png'
 import styled, { css } from 'styled-components'
 import { theme } from '../../theme'
 
@@ -7,6 +7,7 @@ const LogoContainer = styled.div`
   display: flex;
   flex-direction: ${({ inline }) => (inline ? 'row' : 'column')};
   align-items: ${({ inline }) => inline && 'center'};
+  align-items: center;
 `
 
 const LogoImg = styled.img`
